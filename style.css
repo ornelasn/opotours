@@ -60,7 +60,7 @@ h2 {
 */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
   grid-template-rows: auto;
   grid-template-areas: 
       "nav nav nav nav" 
