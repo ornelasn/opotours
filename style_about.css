@@ -54,7 +54,7 @@ h2 {
     text-align: center;
 }
 
-.youtube, .blog, .contact, .must-do {
+.book {
     border-radius: 6px;
 }
 
@@ -74,10 +74,6 @@ h2 {
 
 /* HEADER - MENU STYLES 
 ================================================== */
-
-.book, .grid-container {
- border-radius: 6px;	
-}
 
 .nav {
     grid-area: nav;    
