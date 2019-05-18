@@ -32,7 +32,6 @@ body {
     padding-bottom: 4rem; /* this will prevent the footer to overlap with the content */
 }
 
-
 .btn {
     background-color: var(--blue);
     color: var(--light);
@@ -75,6 +74,10 @@ h2 {
 
 /* HEADER - MENU STYLES 
 ================================================== */
+
+.book {
+ border-radius: 6px;	
+}
 
 .nav {
     grid-area: nav;    
@@ -245,7 +248,6 @@ a {
     grid-area: banner;     
     margin-top: 3.6rem; /* this moves the banner below the nav */ 
     background-color: #5d9634;
-
 }
 
 h2 {
