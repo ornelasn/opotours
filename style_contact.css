@@ -443,6 +443,10 @@ a.btt:hover {
     .container label input textarea {
       width: 100%;     
     } 
+	
+     .field {
+	  width: 100%;     
+	}
     
     .banner h2 {              
         text-align: center;
