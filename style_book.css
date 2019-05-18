@@ -59,7 +59,7 @@ h3 {
     font-size: 1.8em;
 }
 
-.youtube, .blog, .contact, .must-do {
+.book {
     border-radius: 6px;
 }
 
@@ -266,7 +266,7 @@ h2 {
       text-align: left;
       background: var(--light); 
       box-shadow: var(--shadow);
-      margin-top: 1rem;
+      margin: 1rem;
       grid-template-columns: 1fr 2fr;
       grid-template-rows: auto;
       grid-template-areas:          
@@ -277,7 +277,6 @@ h2 {
 .geres1, .geres2, .douro1, .douro2 {
     line-height: 1.5;
 }
-
 
 .geres1 { 
     grid-area: geres1; 
