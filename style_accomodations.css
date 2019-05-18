@@ -262,7 +262,7 @@ h2 {
     color: var(--light);
 }
 
-/* BOOK
+/* THIS IS ACCOMODATION BUT LASY TO CHANGE NAMES :D
 ================================================== */
 
 .book {
@@ -272,6 +272,7 @@ h2 {
       background: var(--light); 
       box-shadow: var(--shadow);
       margin: 1rem;
+      border-radius: 6px;
       grid-template-columns: 1fr 1.3fr;
       grid-template-rows: auto;
       grid-template-areas:          
