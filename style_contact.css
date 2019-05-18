@@ -169,7 +169,6 @@ a {
     color: #333;
 } 
 
-
 /* MENU ICON
 ================================================== */
 
@@ -303,6 +302,7 @@ input[type=submit]:hover {
 #submit {
     float: right;
     background-color: var(--blue);
+    margin-top: 0.5rem;	
 }
 
 /* FOOTER 
@@ -413,12 +413,10 @@ a.btt:hover {
   grid-template-rows: auto;
   grid-template-areas:         
     "container";
-}
-     
+}     
  
     .footer p {
         text-align: center;
-
     }
 
 } 
