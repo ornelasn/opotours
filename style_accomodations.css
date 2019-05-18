@@ -270,7 +270,7 @@ h2 {
       text-align: left;
       background: var(--light); 
       box-shadow: var(--shadow);
-      margin-top: 1rem;
+      margin: 1rem;
       grid-template-columns: 1fr 1.3fr;
       grid-template-rows: auto;
       grid-template-areas:          
