@@ -270,8 +270,7 @@ h2 {
       text-align: left;
       background: var(--light); 
       box-shadow: var(--shadow);
-      margin: 1rem;
-      border-radius: 6px;
+      margin: 1rem;      
       grid-template-columns: 1fr 1.3fr;
       grid-template-rows: auto;
       grid-template-areas:          
@@ -281,6 +280,7 @@ h2 {
 
 .geres1, .geres2, .douro1, .douro2 {
     line-height: 1.5;
+     border-radius: 6px;
 }
 
 
