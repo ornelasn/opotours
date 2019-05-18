@@ -69,8 +69,7 @@ h3 {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  border-radius: 6px;
+  grid-template-rows: 1fr;  
   grid-template-areas: 
       "nav nav nav nav" 
       "banner banner banner banner" 
