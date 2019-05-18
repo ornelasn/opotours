@@ -301,7 +301,7 @@ input[type=submit]:hover {
 }
 
 #submit {
-    float: right;
+    
     background-color: var(--blue);
 }
 
