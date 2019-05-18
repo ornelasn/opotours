@@ -59,10 +59,6 @@ h3 {
     font-size: 1.8em;
 }
 
-.book {
-    border-radius: 6px;
-}
-
 /* MAIN GRID CONTAINER 
 ================================================== */
 
@@ -88,12 +84,9 @@ a {
   color: #333;
 }
 
-
 .social-buttons-nav .far {
-    padding: 0 3rem 1rem 0;
-    
+    padding: 0 3rem 1rem 0;    
 }
-
 
 /* HEADER
 ================================================== */
@@ -174,7 +167,6 @@ a {
     background-color: azure;
     color: #333;
 } 
-
 
 /* MENU ICON
 ================================================== */
@@ -267,6 +259,7 @@ h2 {
       background: var(--light); 
       box-shadow: var(--shadow);
       margin: 1rem;
+      border-radius: 6px;	
       grid-template-columns: 1fr 2fr;
       grid-template-rows: auto;
       grid-template-areas:          
@@ -426,7 +419,8 @@ a.btt:hover {
 } 
 
 @media (max-width: 500px){
-      .grid-container {          
+      .grid-container {  
+	margin: 0.5rem;
         grid-template-areas:
             "nav"
             "banner"
@@ -458,30 +452,3 @@ a.btt:hover {
         padding: 1rem;
     }
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
