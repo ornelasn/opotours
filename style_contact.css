@@ -408,7 +408,7 @@ a.btt:hover {
   display: grid; 
   background: var(--light); 
   box-shadow: var(--shadow);
-  margin: 1rem 0 1rem 0;
+  margin: 1rem;
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas:         
@@ -436,10 +436,13 @@ a.btt:hover {
         display: none;
     }
      
-    .container {
-      margin: 1rem 0 1rem 0;
-	    max-width: 500px;
-	}
+     .container {
+        margin: 1rem 0 1rem 0;
+     }
+
+    .container label input textarea {
+      width: 100%;     
+    } 
     
     .banner h2 {              
         text-align: center;
@@ -457,30 +460,3 @@ a.btt:hover {
         padding: 1rem;
     }
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
