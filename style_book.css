@@ -419,8 +419,7 @@ a.btt:hover {
 } 
 
 @media (max-width: 500px){
-      .grid-container {  
-	margin: 0.5rem;
+      .grid-container {  	
         grid-template-areas:
             "nav"
             "banner"
@@ -431,7 +430,12 @@ a.btt:hover {
     .prevent {
         display: none;
     }
+	
+	.book { 
+	   margin: 0.5rem;
+	}	
      
+	
     .geres1, .geres2, .douro1, .douro2 {
         padding: 0 0 1.2rem 0;
     }
