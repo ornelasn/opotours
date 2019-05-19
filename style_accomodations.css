@@ -61,8 +61,9 @@ h3 {
     font-size: 1.8em;
 }
 
-.youtube, .blog, .contact, .must-do {
-    border-radius: 6px;
+.book {
+    border-radius: 6px;	
+    padding: 0px 7px; /* this fixes que border not being applied */
 }
 
 /* MAIN GRID CONTAINER 
@@ -437,7 +438,10 @@ a.btt:hover {
     .prevent {
         display: none;
     }
-     
+     .book {
+	   margin: 0.5rem;  
+	}
+	
     .geres1, .geres2, .douro1, .douro2 {
         padding: 0 0 1.2rem 0;
     }
