@@ -60,6 +60,10 @@ h3 {
     font-size: 1.8em;
 }
 
+.book {
+    border-radius: 6px;	
+}
+
 /* MAIN GRID CONTAINER 
 ================================================== */
 
@@ -296,7 +300,6 @@ h2 {
     padding: 2rem;     
 }
 
-
 /* FOOTER 
 ================================================== */
 
@@ -354,7 +357,6 @@ a.btt .svg-inline--fa {
 a.btt:hover {
   transform: translatey(-10%);
 }
-
 
 /* MEDIA QUERIES 
 ================================================== */
@@ -433,13 +435,13 @@ a.btt:hover {
     }
 	
      .book { 
-	   margin: 0.5rem;
-	}	
-     .btn {
-	     float: right;
-	     padding-left: 1rem;
+   	margin: 0.5rem;
 	}
-	     
+	
+     .btn {
+        float: right;
+        padding-left: 1rem;
+    }	     
 	
     .geres1, .geres2, .douro1, .douro2 {
         padding: 0.5rem;
