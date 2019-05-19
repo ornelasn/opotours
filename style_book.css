@@ -62,7 +62,9 @@ h3 {
 
 .book {
     border-radius: 6px;	
-	border-collapse: separate; 
+	padding: 0px 7px;
+
+
 }
 
 /* MAIN GRID CONTAINER 
