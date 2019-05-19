@@ -399,7 +399,6 @@ h2 {
  
     .footer p {
         text-align: center;
-
     }
 
 } 
@@ -413,7 +412,9 @@ h2 {
             "footer";
     }   
     
-    
+    .book {
+	    margin: 0.5rem;
+	}
     
      .prevent {
         display: none;
