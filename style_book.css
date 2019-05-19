@@ -39,7 +39,8 @@ body {
     padding: 0.3rem 1.3rem; /* 1rem=16px */ 
     text-decoration: none;
     border: 0;
-    border-radius: 2px;      
+    border-radius: 2px;  
+   margin-bottom: 1rem;	
 }
 
 .btn:hover {
@@ -281,10 +282,6 @@ h2 {
     grid-area: geres2; 
     background: var(--light);     
     padding: 2rem;    
-}
-
-.geres2 .btn {
-   margin-bottom: 1rem;	
 }
 
 .douro1 {
