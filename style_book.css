@@ -431,10 +431,14 @@ a.btt:hover {
         display: none;
     }
 	
-	.book { 
+     .book { 
 	   margin: 0.5rem;
 	}	
-     
+     .btn {
+	     float: right;
+	     padding-left: 1rem;
+	}
+	     
 	
     .geres1, .geres2, .douro1, .douro2 {
         padding: 0 0 1.2rem 0;
