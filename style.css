@@ -289,14 +289,18 @@ a {
 
 .title { 
     grid-area: title;    
-    padding: 0 1rem;    
-    
+    padding: 0 1rem;        
 }
 
 .geres { 
     grid-area: geres; 
     background: var(--light);     
     padding: 0 0.5rem 1.2rem 0;    
+}
+
+.geres .btn {
+   float: left; 
+   margin-left: 1rem; 	
 }
 
 .douro {
