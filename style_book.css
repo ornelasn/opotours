@@ -283,6 +283,10 @@ h2 {
     padding: 2rem;    
 }
 
+.geres2 #btn {
+   margin-bottom: 1rem;	
+}
+
 .douro1 {
     grid-area: douro1; 
     background: var(--light);     
