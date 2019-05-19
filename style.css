@@ -274,7 +274,7 @@ a {
 .must-do {
       grid-area: must-do;
       display: grid;
-      
+      text-align: center;
       background: var(--light); 
       box-shadow: var(--shadow);
       margin-top: 1rem;
@@ -288,8 +288,12 @@ a {
 
 .title { 
     grid-area: title;    
-    padding: 0 1rem;    
-    text-align: center;
+    padding: 0 1rem;       
+}
+
+
+.geres .btn, .douro .btn {
+   margin-left: 1rem;	
 }
 
 .geres { 
