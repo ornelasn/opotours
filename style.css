@@ -291,8 +291,11 @@ a {
     padding: 0 1rem;       
 }
 
+.geres .btn {
+   margin-left: 1rem;	
+}
 
-.geres .btn, .douro .btn {
+.douro .btn {
    margin-left: 1rem;	
 }
 
