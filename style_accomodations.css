@@ -281,6 +281,9 @@ h2 {
     line-height: 1.5;     
 }
 
+.book {
+	padding:1rem;
+}
 
 .geres1 { 
     grid-area: geres1; 
