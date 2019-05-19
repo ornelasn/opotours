@@ -62,9 +62,7 @@ h3 {
 
 .book {
     border-radius: 6px;	
-	padding: 0px 7px;
-
-
+    padding: 0px 7px; /* this fixes que border not being applied */
 }
 
 /* MAIN GRID CONTAINER 
