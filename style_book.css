@@ -440,8 +440,7 @@ a.btt:hover {
 	}
 	
      .btn {
-        float: right;
-        padding-left: 1rem;
+        text-align: center;
     }	     
 	
     .geres1, .geres2, .douro1, .douro2 {
