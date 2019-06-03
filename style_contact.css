@@ -67,10 +67,10 @@ h2 {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-      "nav nav nav nav" 
-      "banner banner banner banner" 
-      ". container container ."
-      "footer footer footer footer";
+      "nav nav nav" 
+      "banner banner banner" 
+      ". container ."
+      "footer footer footer";
 }
 
 /* HEADER - MENU STYLES 
