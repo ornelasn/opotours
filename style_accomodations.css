@@ -101,6 +101,7 @@ a {
     display: inline-block;
     float: right;   
     padding: 0.9rem 3rem 0 0;
+	color: #5d9634;
 }
 
 .header .fa-facebook-f:hover {
@@ -115,6 +116,7 @@ body {
      display: inline-block;
      float: right;   
      padding: 0.9rem 2rem 0 0;
+	color: #5d9634;
 }
 
 .header .fa-envelope:hover { 
@@ -125,6 +127,7 @@ body {
      display: inline-block;
      float: right;   
      padding: 0.9rem 2rem 0 0;
+	color: #5d9634;
 }
 
 .header .fa-youtube:hover { 
