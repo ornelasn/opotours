@@ -69,7 +69,7 @@ h2 {
   grid-template-areas: 
       "nav nav nav nav" 
       "banner banner banner banner" 
-      "container container container container"
+      ". container container ."
       "footer footer footer footer";
 }
 
