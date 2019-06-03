@@ -375,7 +375,7 @@ a {
 
 .social-buttons .far {
     padding: 0 3rem 1rem 0;
-    
+    color: #5d9634;
 }
 
 .contact h2, h3 {
@@ -387,7 +387,7 @@ a {
 }
 
 .social-buttons .fa-envelope:hover { 
-    opacity: 0.8;
+    opacity: 0.8;	
 }
 
 .social-buttons .fa-facebook-f:hover { 
