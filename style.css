@@ -90,8 +90,7 @@ a {
 }
 
 .social-buttons-nav .fa-facebook-f, .fa-envelope {
-    padding: 0 3rem 1rem 0;
-	color: #5d9634;
+    padding: 0 3rem 1rem 0;	
 }
 
 /* HEADER
@@ -101,6 +100,7 @@ a {
     display: inline-block;
     float: right;   
     padding: 0.9rem 3rem 0 0;
+	color: #5d9634;
 }
 
 .header .fa-facebook-f:hover {
@@ -111,6 +111,7 @@ a {
      display: inline-block;
      float: right;   
      padding: 0.9rem 2rem 0 0;
+	color: #5d9634;
 }
 
 .header .fa-envelope:hover { 
@@ -121,6 +122,7 @@ a {
      display: inline-block;
      float: right;   
      padding: 0.9rem 2rem 0 0;
+	color: #5d9634;
 }
 
 .header .fa-youtube:hover { 
