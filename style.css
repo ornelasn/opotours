@@ -492,6 +492,10 @@ a.btt:hover {
             "footer";
     }       
        
+    .prevent {
+     display: none;
+    }
+	
     h1 {
     font-size: 2em;
     text-align: center;
@@ -552,10 +556,6 @@ a.btt:hover {
             "douro";  
         }     
    
-     .prevent {
-        display: none;
-    }
-         
     .banner h1 {
         font-size: 1.5em;        
         text-align: center;
