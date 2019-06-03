@@ -266,11 +266,11 @@ body {
 .banner { 
     grid-area: banner; 
     margin-top: 3.6rem; /* this moves the banner below the nav */ 
-    background-color: #5d9634;
+    background-color: #E8B658;
 }
 
 h2 {
-    color: var(--light);
+    color: var(--dark);
 }
 
 /* THIS IS ACCOMODATION BUT LASY TO CHANGE NAMES :D
