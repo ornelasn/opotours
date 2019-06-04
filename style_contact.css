@@ -409,12 +409,12 @@ a.btt:hover {
 
 @media (max-width: 1024px){  
     .grid-container {           
-        grid-template-areas:
-            "nav nav"
-            "banner banner" 
-            "container container"
-            "footer footer";
-    }          
+      grid-template-areas: 
+      "nav nav nav" 
+      "banner banner banner" 
+      ". container ."
+      "footer footer footer";
+}        
       
    .container {
   grid-area: container;
@@ -439,7 +439,7 @@ a.btt:hover {
         grid-template-areas:
             "nav"
             "banner" 
-            "container container"
+            "container"
             "footer";
     }   
        
