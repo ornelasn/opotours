@@ -439,7 +439,7 @@ a.btt:hover {
         grid-template-areas:
             "nav"
             "banner" 
-            "container"
+            "container container"
             "footer";
     }   
        
