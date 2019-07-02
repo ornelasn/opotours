@@ -338,8 +338,7 @@ a {
 
 .title { 
     grid-area: title;    
-    padding: 0 1rem;    
-    
+    padding: 0 1rem;      
 }
 
 .geres { 
@@ -362,7 +361,7 @@ a {
     background: var(--light);   
     padding: 1rem;
     box-shadow: var(--shadow);
-    margin: 1rem 0 1rem 0.5rem;
+    margin: 1rem 0 1rem 0;
 }
 
 .contact img {
