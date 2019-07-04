@@ -279,7 +279,7 @@ h2 {
       box-shadow: var(--shadow);
       margin: 1rem;
       border-radius: 6px;	
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
       grid-template-rows: auto;
       grid-template-areas:          
           "geres1 geres2"
