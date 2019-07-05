@@ -51,7 +51,7 @@ img {
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 2.6em;
     text-align: center;
 }
 
@@ -357,19 +357,30 @@ a {
 ==================================================*/
 
 .contact {
-    grid-area: contact;
+    grid-area: contact;    
+    display: grid;
+    text-align: center;
     background: var(--light);   
     padding: 1rem;
     box-shadow: var(--shadow);
-    margin: 1rem 0 1rem 0;
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+          "picture picture" 
+          "info info"; 
 }
 
-.contact img {
-    display: block;
+.picture img {    
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%; 
+    width: 50%; 
+}
+
+
+
+.teste {    
+    top: 50%;
+    left: 50%;    
 }
 
 .social-buttons .far {
@@ -490,7 +501,8 @@ a {
 } 
 
 @media (max-width: 500px){
-      .grid-container {  
+        .grid-container {  
+           
         grid-template-columns: 1fr;
         grid-template-areas:
             "nav"
@@ -500,17 +512,27 @@ a {
             "footer";
     }   
     
-    .must-do {
+        .must-do {
           grid-area: must-do;
           margin: auto;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr;
           grid-template-rows: auto;
           grid-template-areas: 
             "title" 
             "geres"
             "douro";  
         }     
-   
+    
+        .contact {
+        grid-area: contact;         
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+              "picture" 
+              "info"; 
+    }
+    
     .banner h1 {
         font-size: 1.5em;        
         text-align: center;
@@ -552,90 +574,3 @@ a {
         padding: 1rem;
     }
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
