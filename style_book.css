@@ -5,7 +5,7 @@
     --primary: #ddd;
     --dark: #343434;
     --light: #fff;
-    --blue: #5d9634; /* this is actually green, too lasy to change everything XD */
+    --blue: #157cb8; /* this is actually green, too lasy to change everything XD */
     --hover: rgba(89.4, 87.8, 83.1, 0.7);
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.2);
     --primary-color: rgba(20.4, 20.4, 20.4, 0.8);/*button*/ 
@@ -101,7 +101,7 @@ a {
     display: inline-block;
     float: right;   
     padding: 0.9rem 3rem 0 0;
-	color: #5d9634;
+	color: var(--blue);
 }
 
 .header .fa-facebook-f:hover {
@@ -112,7 +112,7 @@ a {
      display: inline-block;
      float: right;   
      padding: 0.9rem 2rem 0 0;
-	color: #5d9634;
+	color: var(--blue);
 }
 
 .header .fa-envelope:hover { 
@@ -123,7 +123,7 @@ a {
      display: inline-block;
      float: right;   
      padding: 0.9rem 2rem 0 0;
-	color: #5d9634;
+	color: var(--blue);
 }
 
 .header .fa-youtube:hover { 
