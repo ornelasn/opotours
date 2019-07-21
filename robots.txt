@@ -1,2 +1,3 @@
-user-agent:*
-sitemap: https://www.opotours.tk/sitemap.xml
+User-agent:*
+Disallow:
+Sitemap: https://www.opotours.tk/sitemap.xml
