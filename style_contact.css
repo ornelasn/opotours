@@ -269,6 +269,7 @@ h2 {
 .container {
   grid-area: container;
   display: grid; 
+	text-align: center;
   background: var(--light); 
   box-shadow: var(--shadow);
   margin: 1rem;
