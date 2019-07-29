@@ -328,6 +328,11 @@ h2 {
     opacity: 0.8;
 }
 
+.social-buttons {
+	text-align: center;
+	clear: both; 
+    }
+
 /* FOOTER 
 ================================================== */
 
