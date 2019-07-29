@@ -360,6 +360,7 @@ a {
     grid-area: contact;    
     display: grid;
     text-align: center;
+    align-items: center;
     background: var(--light);   
     padding: 1rem;
     box-shadow: var(--shadow);
