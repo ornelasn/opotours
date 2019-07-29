@@ -269,6 +269,7 @@ h2 {
       grid-area: book;
       display: grid;
       text-align: left;
+      align-items: center;	
       background: var(--light); 
       box-shadow: var(--shadow);
       margin: 1rem;
