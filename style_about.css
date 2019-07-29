@@ -395,8 +395,7 @@ h2 {
             clear: both; 
     }
         
-    .book {      
-        text-align: center;
+    .book {              
         grid-template-areas: 
             "geres1 geres1"
             "geres2 geres2";
