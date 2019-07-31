@@ -347,6 +347,14 @@ a {
     padding: 0 0.5rem 1.2rem 0;    
 }
 
+.geres h1 {
+    font-size: 1rem;	
+}
+
+.douro h1 {
+    font-size: 1rem;	
+}
+
 .douro {
     grid-area: douro; 
     background: var(--light);     
