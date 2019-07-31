@@ -566,6 +566,14 @@ a {
     .contact {
         margin: 0.5rem;
     }
+	
+	.geres h2 {
+	font-size: 1.2rem;	
+	}
+
+	.douro h2 {
+	font-size: 1.2rem;	
+	}
     
     .contact img {
         display: block;
