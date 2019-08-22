@@ -1,131 +1,110 @@
-/* CSS VARIABLES 
-================================================== */
+/* VARIABLES 
+========================================== */
 
 :root {
     --primary: #ddd;
-    --dark: #343434;
+    --dark: #161B21;
     --light: #fff;
-    --blue: #157cb8; 
-    --hover: rgba(89.4, 87.8, 83.1, 0.7);
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.2);
-    --primary-color: rgba(20.4, 20.4, 20.4, 0.8);/*button*/ 
-    --overlay-color: rgba(20.4, 20.4, 20.4 , 0.95);
-    --menu-speed: 0.75s;
+    --hover: rgba(89.4, 87.8, 83.1, 0.7);    
+    --yellow: #fccd04;  
+    --blue: #008CBA; 
+    --darkgray: #464545;
 }
 
-/* GLOBAL STYLING ================================================== */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* GLOBAL STYLING 
+========================================== */
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
-body {  
-    min-height: 100vh; /* need to fix the footer to the bottom */
-    position: relative;
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     background: var(--primary);
-    color: var(--dark); 
+    color: var(--dark);   
+    position: relative;
+    padding-bottom: 3rem;  /* 3rem is the size o the footer */
+    min-height: 100vh;  /* this makes the content fill the entire space */  
 }
 
 .grid-container {
-    padding-bottom: 4rem; /* this will prevent the footer to overlap with the content */
-}
-
-.btn {
-    background-color: var(--blue);
-    color: var(--light);
-    padding: 0.3rem 1.3rem; /* 1rem=16px */ 
-    text-decoration: none;
-    border: 0;
-    border-radius: 2px;      
-}
-
-.btn:hover {
-    background-color: var(--hover);    
-}
+    padding-bottom: 3rem; /* this will prevent the footer to overlap with the content */
+ }
 
 img {
-    width: 100%; /* the image will always fill the box */  
+  max-width: 100%;
+  height: auto;  
+ }
+
+#picture {
+     border-radius: 50%;
 }
 
-h2 {
-    font-size: 1.8em;
-    text-align: center;
+h1 { 
+  text-align:center;
+  font-size: 3rem;
+  font-weight: 500;	
 }
 
-.book {
-     border-radius: 6px;	
-    padding: 0px 7px; /* this fixes que border not being applied */
-}
-
-/* MAIN GRID CONTAINER 
-================================================== */
-
-.grid-container {
-  display: grid;   
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: 
-      "nav nav nav nav" 
-      "banner banner banner banner" 
-      "book book book book"
-      "footer footer footer footer";
-}
-
-/* HEADER - MENU STYLES 
-================================================== */
+/* NAV BAR 
+========================================== */
 
 .nav {
-    grid-area: nav;    
+    grid-area: nav; 
+    margin-bottom: 3.2rem;   
 }
 
 a {
-  color: #333;
+  color: #464545;
 }
 
-.social-buttons-nav .far {
-    padding: 0 3rem 1rem 0;    
-}
-
-/* HEADER
+/* HEADER 
 ================================================== */
 
-.header .fa-facebook-f {
+/* EMAIL
+================================================== */
+
+.btn { 
     display: inline-block;
     float: right;   
-    padding: 0.9rem 3rem 0 0;
-	color: var(--blue);
+    padding:  0;  
+    cursor: pointer; 
+    background-color: var(--blue);
+    color: #fff;
+    border: none;
 }
 
-.header .fa-facebook-f:hover {
-    opacity: 0.8;
+.btn:hover {
+    color: var(--dark);
 }
 
-.header .fa-envelope {
-     display: inline-block;
-     float: right;   
-     padding: 0.9rem 2rem 0 0;
-	color: var(--blue);
+.addMore{
+  border: none;
+  width: 32px;
+  height: 32px;
+  background-color: #eee;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+.addMore:hover{
+  border: 1px solid #888;
+  background-color: #ddd;
 }
 
-.header .fa-envelope:hover { 
-    opacity: 0.8;
-}
-
-.header .fa-youtube {
-     display: inline-block;
-     float: right;   
-     padding: 0.9rem 2rem 0 0;
-	color: var(--blue);
-}
-
-.header .fa-youtube:hover { 
-    opacity: 0.8;
-}
+/* LIST
+================================================== */
 
 .header {
-  background-color: #fff;
+  background-color: var(--blue);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
@@ -137,27 +116,76 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;    
+  background-color: var(--blue);  
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
+  border-right: 1px solid #999;
+  text-decoration: none;  
+  color: #fff;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: var(--yellow);
+    color: var(--dark);
 }
 
 .header .logo { /* LOGO */ 
   display: block;
   float: left;  
-  padding: 0.3rem 0 0 1rem; 
+  padding: 0.7rem 0 0 1rem; 
   margin-left: 0;       
-  text-decoration: none;  
+  text-decoration: none; 
+  font-size: 2rem;
+  color: #fff;
+}
+
+.logo:hover {
+    color: var(--yellow);
+}
+
+#linkedin {      
+    float: right;
+    padding: 0.6rem 2.5rem 0.5rem 1rem;
+    fill:#fff;
+}
+
+#email {  
+    display: inherit;
+    float: right;
+    padding: 0.7rem 1rem 0.5rem 2rem;
+    fill:#fff;
+}
+
+#linkedin:hover, #email:hover {
+    fill:var(--yellow);    
+}
+
+#linkedin1 {      
+    padding: 1rem;
+    fill: var(--blue);
+}
+
+#email1 {      
+    margin: 0;
+    padding: 1rem;  
+    fill:var(--blue);
+    background-color: transparent; /* removes the blue background */
+}
+
+#linkedin1:hover, #email1:hover {
+    fill:var(--yellow);  
+    stroke:var(--blue);
+}
+
+.align-buttons {
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+	
 }
 
 /* MENU 
@@ -170,16 +198,6 @@ a {
   text-align: center; /* new code centers menu in mobile */
   text-transform: uppercase;     
 }
-
-#booknow {
-    background-color: var(--blue);
-    color: #fff;
-}
-
-#booknow:hover {
-    background-color: azure;
-    color: #333;
-} 
 
 /* MENO ICON
 ================================================== */
@@ -194,7 +212,7 @@ a {
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #fff;
   display: block;
   height: 2px;
   position: relative;
@@ -204,7 +222,7 @@ a {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #fff;
   content: '';
   display: block;
   height: 100%;
@@ -229,7 +247,7 @@ a {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 230px;
+  max-height: 177px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -249,100 +267,74 @@ a {
   top: 0;
 }
 
-/* BANNER 
-================================================== */
+/* GRID CONTAINER 
+========================================== */
 
-.banner { 
-    grid-area: banner;     
-    margin-top: 3.6rem; /* this moves the banner below the nav */ 
-    background-color: #E8B658;
+.grid-container {
+  display: grid;
+  align-items: center;
+  padding: 0;    
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+	  'nav nav nav nav'
+      'me me about about'
+	  'footer footer footer footer'
 }
 
-h2 {
-    color: var(--dark);
+.me {
+	grid-area: me;
+    text-align: center;
+    align-items: center;     
+	display: grid;
+    background-color: var(--yellow); 
+    padding: 3rem;     
+	min-height: calc(100vh - 6.2rem);	
+   
 }
 
-/* ABOUT
-================================================== */
-
-.book {
-      grid-area: book;
-      display: grid;
-      text-align: left;
-      align-items: center;	
-      background: var(--light); 
-      box-shadow: var(--shadow);
-      margin: 1rem;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      grid-template-areas:          
-          "geres1 geres2";     
+.me h1 {
+	font-size: 3em;    
 }
 
-.geres1, .geres2 {
-    line-height: 1.5;
-}
-
-
-.geres1 { 
-    grid-area: geres1; 
-    background: var(--light);     
-    padding: 2rem;    
-}
-
-.geres1 img {
+.me img {
     display: block;
-    border-radius: 50%;
+    border-radius: 70%;
     margin-left: auto;
     margin-right: auto;
-    width: 50%; 
+    width: 70%; 
 }
 
-.geres2 { 
-    grid-area: geres2; 
-    background: var(--light);     
-    padding: 2rem;    
+.about {
+    grid-area: about;
+    display: grid;         
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    padding: 1rem;    
 }
 
-.geres2 h4{
-    font-size: 1.8em;
+.about h1 {
+    font-size: 3em; 
+    text-shadow: 1px 1px 5px #FFF;
+    color: var(--dark);
+    text-align: left; 	
 }
 
-.social-buttons .fas {
-    padding: 0 3rem 1rem 0;    
+.about p {
+    font-size: 1.2em;
+    text-align: justify;
+
 }
 
-.contact h2, h3 {
-    text-align: center;
-}
-
-.contact p {
-    text-align: center;    
-}
-
-.social-buttons .fa-envelope:hover { 
-    opacity: 0.8;
-}
-
-.social-buttons .fa-facebook-f:hover { 
-    opacity: 0.8;
-}
-
-.social-buttons {
-	text-align: center;
-	clear: both; 
-    }
-
-/* FOOTER 
-================================================== */
+/* FOOTER
+========================================== */
 
 .footer {
     grid-area: footer;
     background: var(--dark);    
-    height: 3rem;    
-    position: absolute;
+    height: 3rem;      
+    position: absolute; /* position is absolute and relative to the body */ 
     bottom: 0;
-    width: 100vw;    
+    width: 100%; 
 } 
 
 .footer p {
@@ -352,97 +344,104 @@ h2 {
 }
 
 /* MEDIA QUERIES 
-================================================== */
+ ==================================================*/
+
+/* MENU FOR DESKTOP 
+ ==================================================*/
 
 @media (min-width: 1025px) {
       
-	.header li {         
+     .header li {         
        display: inline-block;
        text-align: center;
        margin-left: -4px;       
       }
          
     .logo {
-        float: left;
-        width: 8rem; /* this will make the menu center. change it when needed */
-        padding: 0;
+        float: right;
+        padding: 1rem;
     }
       .header li a {
         padding: 20px 30px;
       }
       .header .menu {
         clear: none;       
-        max-height: none; 
+        max-height: none;
+        float: right;
       }
     
       .header .menu-icon {
         display: none;
-      }
-   
+      }   
 }
 
-@media (max-width: 1024px){  
-    .grid-container {           
-        grid-template-areas:
-            "nav nav"
-            "banner banner" 
-            "book book"
-            "footer footer";
-    }   
-    
-    h4 {
-        padding: 0;
-        margin: 0;
-    }
-    
-    .social-buttons {
-        text-align: center;
-            clear: both; 
-    }
-        
-    .book {              
-        grid-template-areas: 
-            "geres1 geres1"
-            "geres2 geres2";
-    }
-    
-    .geres {
-        padding: 0 0.5rem 0 0.5rem;
-    }   
+/* MOBILE 
+ ==================================================*/
+
+@media (max-width: 1024px){           
  
-    .footer p {
-        text-align: center;
-
+    .grid-container {      
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+          'nav' 
+          'me'
+          'art'          
+          'footer';
+}
+    
+   .me {
+    	min-height: 250px;
+    	padding: 1rem; 
+    	color: var(--dark);   	
+    }
+    
+    .me img {
+        margin-bottom: 2rem;
+        width: 55%; 
     }
 
-} 
+    .me h1 {     	
+    	font-size: 2.2rem;
+        font-weight: 500;   	
+    } 
 
-@media (max-width: 500px){
-      .grid-container {          
-        grid-template-areas:
-            "nav"
-            "banner" 
-            "book"
-            "footer";
-    }         
-    
-    .book {
-	 margin: 0.5rem;   
-	}
-    
-    .banner h2 {              
-        text-align: center;
-   }         
-  
-    .footer {
-        display: flex;        
-        align-items: center;
-        padding: 2em;        
-    }    
-    
-    .footer p {
-        color: var(--light);    
-        align-items: center;
-        padding: 1rem;
+    .art {
+        margin: 0;
+        min-height: 500px; 
+		}
+    .art p {
+        font-size: 1.2em;
     }
-} 
+	
+    h1 { 
+	  text-align:center;
+	  font-size: 2.2rem;
+	  font-weight: 500;	
+    } 	
+
+}
+
+@media (max-width: 768px) {
+
+    .grid-container {      
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+          "nav" 
+          'me'
+          'art'         
+          "footer";
+}
+
+    .me {
+    	min-height: 250px;
+    	padding: 1rem; 
+    	color: var(--dark);   	
+    }
+    
+    .me img {
+        margin-bottom: 2rem;
+    }     
+    		
+}
