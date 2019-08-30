@@ -311,7 +311,7 @@ a {
     }
     
 .banner {
-    background: url('poster.jpg');
+    background: url('/poster.jpg');
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); /* this will create a shadow over the image banner*/
     color: var(--light);
     margin-top: 3.6rem; /* this moves the banner below the nav */
