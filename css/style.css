@@ -1,0 +1,433 @@
+/* CSS VARIABLES 
+==================================================*/
+
+:root {
+    --primary: #ddd;
+    --dark: #161B21;
+    --light: #fff;
+    --blue: #003a6c; /* dark blue */
+    --hover: #157cb8; 
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.2);   
+    --menu-speed: 0.75s;
+}
+
+/* GLOBAL STYLING 
+==================================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: var(--primary);
+    color: var(--dark); 
+    position: relative;
+    padding-bottom: 3rem;  /* 3rem is the size o the footer */
+    min-height: 100vh;  /* this makes the content fill the entire space */    
+}
+
+.btn {
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 0.3rem 1.3rem; /* 1rem=16px */ 
+    text-decoration: none;
+    border: 0;
+    border-radius: 2px;      
+}
+
+.btn:hover {
+    background-color: var(--hover);    
+}
+
+img {
+    width: 100%; /* the image will always fill the box */  
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3em;
+    text-align: center;
+}
+
+p {
+    font-size: normal;
+}
+
+.button {
+        width: 145px;       
+        position: relative;
+        display: inline-block; 
+        float: left;
+        margin: 0.35rem 1rem 0 1rem;        
+    }
+
+.button .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+.button:hover .img-top {
+        display: inline;
+    }
+
+/* MAIN GRID CONTAINER 
+================================================== */
+
+.grid-container {
+  display: grid;
+  grid-template-columns:auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+      "nav nav nav nav" 
+      "banner banner banner banner"      
+      "footer footer footer footer";
+  }
+
+/* HEADER - MENU STYLES 
+================================================== */
+
+.nav {
+    grid-area: nav;    
+}
+
+a {
+  color: #333;
+}
+
+.social-buttons-nav .fa-facebook-f, .fa-envelope {
+    padding: 0 3rem 1rem 0;	
+}
+
+/* HEADER
+================================================== */
+
+.header .fa-facebook-f {
+    display: inline-block;
+    float: right;   
+    padding: 0.9rem 3rem 0 0;
+	color: var(--blue);
+}
+
+.header .fa-youtube {
+     display: inline-block;
+     float: right;   
+     padding: 0.9rem 2rem 0 0;
+	 color: var(--blue);
+}
+
+.header .fa-envelope {
+     display: inline-block;
+     float: right;   
+     padding: 0.9rem 2rem 0 0;
+     color: var(--blue);
+}
+
+.header .fa-youtube:hover, .header .fa-envelope:hover, .header .fa-facebook-f:hover  { 
+    color: var(--hover);   
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3; 
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;    
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  /* border-right: 1px solid #f4f4f4; */
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: var(--hover);
+    color: #fff;
+}
+
+/* LOGO 
+==================================================*/
+
+.header .logo { 
+  display: block;
+  float: left;  
+  padding: 0.3rem 0 0 1rem; 
+  margin-left: 0;       
+}
+
+/* MENU 
+================================================== */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  text-align: center; /* new code centers menu in mobile */
+  text-transform: uppercase;     
+}
+
+#booknow {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+#booknow:hover {
+    background-color: var(--hover);
+    color: #fff;
+} 
+
+/* MENO ICON
+================================================== */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 1.1rem;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* MENU BTN
+================================================== */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 230px; /* THIS CHANGES THE HEIGHT OF THE MENU */
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* BANNER 
+================================================== */
+
+.banner { 
+    grid-area: banner;    
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); /* this will create a shadow over the image banner*/
+    color: var(--light);
+    margin-top: 3.6rem; /* this moves the banner below the nav */
+    min-height: calc(100vh - 6.6rem);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;        
+}
+
+.banner .btn {
+    font-size: 1.5rem;
+}
+
+/* BANNER - VIDEO
+================================================== */
+
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .banner__video {
+        display: none;
+    }
+    
+.banner {
+    background: url('poster.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); /* this will create a shadow over the image banner*/
+    color: var(--light);
+    margin-top: 3.6rem; /* this moves the banner below the nav */
+    min-height: calc(100vh - 6.6rem);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+ }
+    
+}
+
+/* FOOTER 
+ ==================================================*/
+
+.footer {
+    grid-area: footer;
+    background: var(--dark);    
+    height: 3rem;    
+    position: absolute; /* position is absolute and relative to the body */ 
+    bottom: 0;
+    width: 100%; 
+    z-index: 99;
+} 
+
+.footer p {
+    color: var(--light);
+    text-align: right; 
+    padding-right: 3rem;
+}
+
+/* MEDIA QUERIES 
+ ==================================================*/
+
+@media (min-width: 1025px) {
+      
+	.header li {         
+       display: inline-block;
+       text-align: center;
+       margin-left: -4px;       
+      }
+         
+    .logo {
+        float: left;
+        width: 8rem; /* this will make the menu center. change it when needed */
+        padding: 0;
+    }
+      .header li a {
+        padding: 20px 30px;
+      }
+      .header .menu {
+        clear: none;       
+        max-height: none; 
+      }
+    
+      .header .menu-icon {
+        display: none;
+      }
+   
+}
+
+@media (max-width: 1024px){  
+    .grid-container {         
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav nav"
+            "banner banner"              
+            "footer";
+    }       
+        
+    h1 {
+    font-size: 2em;
+    text-align: center;
+    }
+    
+    .banner .btn {
+    font-size: 1rem;
+    } 
+    
+    .footer p {
+        text-align: center;
+    }
+
+} 
+
+@media (max-width: 500px){
+        .grid-container {  
+           
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "banner"                     
+            "footer";
+    }   
+    
+    .banner h1 {
+        font-size: 1.5em;        
+        text-align: center;
+   }
+
+    .footer {
+        display: flex;        
+        align-items: center;
+        padding: 2em;        
+    }    
+    
+    .footer p {
+        color: var(--light);    
+        align-items: center;
+        padding: 1rem;
+    }
+} 
+
+/* NORMALIZE */ 
+
+ html {line-height: 1.15;-webkit-text-size-adjust: 100%;}body {margin: 0;}main {display: block;}h1 {font-size: 2em;margin: 0.67em 0;}hr {box-sizing: content-box;height: 0;overflow: visible;}pre {font-family: monospace, monospace;font-size: 1em;}a {background-color: transparent;}abbr[title] {border-bottom: none;text-decoration: underline;text-decoration: underline dotted;}b, strong {font-weight: bolder;}code, kbd, samp {font-family: monospace, monospace;font-size: 1em;}small {font-size: 80%;}sub, sup {font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}sub {bottom: -0.25em;}sup {top: -0.5em;}img {border-style: none;}button, input, optgroup, select, textarea {font-family: inherit;font-size: 100%;line-height: 1.15;margin: 0;}button, input {overflow: visible;}button, select {text-transform: none;}button, [type="button"], [type="reset"], [type="submit"] {-webkit-appearance: button;}button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {border-style: none;padding: 0;}button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {outline: 1px dotted ButtonText;}fieldset {padding: 0.35em 0.75em 0.625em;}legend {box-sizing: border-box;color: inherit;display: table;max-width: 100%;padding: 0;white-space: normal;}progress {vertical-align: baseline;}textarea {overflow: auto;}[type="checkbox"], [type="radio"] {box-sizing: border-box;padding: 0;}[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {height: auto;}[type="search"] {-webkit-appearance: textfield;outline-offset: -2px;}[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}::-webkit-file-upload-button {-webkit-appearance: button;font: inherit;}details {display: block;}summary {display: list-item;}template {display: none;}[hidden] {display: none;}
