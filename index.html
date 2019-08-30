@@ -1,6 +1,9 @@
 <!DOCTYPE html> 
-<html lang="en">    
+<html lang="en">   
+    
 <head> 
+    <title>Opotours</title>  
+    
     <meta charset="UTF-8">         
     <meta name="viewport" content>
     <meta name="description" content="Opotours. Discover the green ways of Oporto with us.">   
@@ -8,17 +11,18 @@
     <meta name="author" content="Opotours">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:image" content="google_preview_.jpg" /> <!-- preview for social -->
-    <title>Opotours</title>  
+    <meta property="og:image" content="preview-google/google_preview_.jpg" /> <!-- preview for social -->      
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/fav.png"> <!-- FAVICON -->  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"> <!-- FAVICON -->  
     <!-- Html tag Google -->  
     <meta name="google-site-verification" content="rULSRbSkmJazCSVGEF6Y4Xv75X-HJ8UDGEChjGCFUjc" />
 </head>
-<body>      
-<div class="grid-container"> 
+    
+<body>  
+    
+<main class="grid-container"> 
 
 <!-- GLOBAL CONTAINER STARTS HERE 
 ================================================== -->
@@ -26,9 +30,16 @@
 <!-- HEADER 
 ================================================== -->  
     
-<div class="nav">     
-    <header class="header">
-      <a href="https://opotours.com/" class="logo"><img src="svg/logo-opotours.svg" style="width:150px;"></a>     
+<header role=”navigation” class="nav">     
+    <header class="header">      
+
+    <a id="btn" href="https://opotours.com/">         
+        <section style="width: 145px" class="button">           
+            <img src="svg/opotours.svg" alt="Home Opotours">
+            <img src="svg/opotours-hover.svg" alt="Home Opotours and Go" class="img-top" alt="Button on over">
+        </section>           
+    </a>            
+        
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
@@ -41,95 +52,30 @@
         <a href="/contact" target="_self"><i class="fas fa-envelope fa-2x"></i></a>
       </ul>     
     </header>    
-</div> 
+</header> 
     
 <!-- BANNER 
 ================================================== -->     
     
-<div class="banner">   
+<article role=”article” class="banner">   
     
     <h1>Discover the green ways of Oporto with us</h1>
     <a href="book" class="btn">Book Now</a>  
    
-    <video autoplay loop muted class="banner__video" poster="video.jpg">   
-    <source src="video.mp4" type="video/mp4">
+    <video autoplay loop muted class="banner__video" poster="video/video.jpg">   
+    <source src="video/video.mp4" type="video/mp4">
     </video>    
     
-</div>     
-        
-<!-- THE BEST TOURS 
-================================================== -->  
+</article>   
     
-<div class="must-do">
-    <div class="title"><h2>Choose your experience</h2></div>
-   
-<!-- THIS METHOD WILL SERVE ALL BROWSERS INCLUDING THE APPLE SYSTEM. IMAGES WILL NOW APPEAR WITH NO PROBLEM. -->
-    
-    <div class="geres"><h2>Gerês National Park<p>hike and swim</p></h2>
-
-        <picture> 
-        <source srcset="img/geres.webp" type="image/webp">
-        <source srcset="img/geres.jpg" type="image/jpeg"> 
-        <img src="img/geres.jpg" alt="Visit Gerês">
-        </picture>
-
-        <br><br><a href="geres" class="btn">More Info</a>
-        </div>
-
-        <div class="douro"><h2>Douro Valley<p>with winery visit and wine tasting</p></h2>
-
-        <picture> 
-        <source srcset="img/douro.webp" type="image/webp">
-        <source srcset="img/douro.jpg" type="image/jpeg"> 
-        <img src="img/douro.jpg" alt="Visit douro">
-        </picture>
-
-        <br><br><a href="douro" class="btn">More Info</a></div>    
-    
-       </div>
-        
-<!-- CONTACT 
-================================================== -->     
-    
-<div class="contact">
-  
-    <div class="picture">
-        <picture> 
-        <source srcset="img/adriano.webp" type="image/webp">
-        <source srcset="img/adriano.jpg" type="image/jpeg"> 
-        <img src="img/adriano.jpg" alt="Adriano Figueira">
-        </picture>        
-    </div>
-    
-    <div class="info">
-        
-        <div class="teste">
-            
-        <h2>Contact me:</h2>    
-        
-        <h2>Adriano Figueira</h2> <br>      
-       
-        <div align="center"> <!-- Best way to align items inside a box -->            
-            
-            <div class="social-buttons" style="display:inline-block">       
-                <a style="color: #157cb8;" href="contact.html" target="_self"><i class="fas fa-envelope fa-3x"></i></a>   
-                <a style="color: #157cb8;" href="https://pt-pt.facebook.com/opotours/" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a>
-            </div>             
-          </div>         
-        </div>
-    </div>  
-       
-</div>     
- 
 <!-- FOOTER 
 ================================================== -->  
-<div class="footer">   
-    
-        <p>Copyrigth &copy; 2019, Opotours Created by <a href="http://narcisoornelas.tk" style="color:cornflowerblue; text-decoration: none">Narciso Ornelas</a></p> 
-</div>
+<footer role=”contentinfo” class="footer">       
+        <p>Copyrigth &copy; 2019, Opotours Created by <a href="http://narcisoornelas.com" target="_blank" style="color:#157cb8; text-decoration: none">Narciso Ornelas</a></p> 
+</footer>
     
 <!--  GLOBAL CONTAINER ENDS HERE 
 ================================================== -->  
-</div>     
+</main>     
 </body>                                         
 </html>

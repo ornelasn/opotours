@@ -1,67 +1,77 @@
 <!DOCTYPE html> 
-<html lang="en">    
+<html lang="en">   
+    
 <head> 
+    <title>Opotours: Contact us</title>  
+    
     <meta charset="UTF-8">         
     <meta name="viewport" content>
-    <meta name="description" content="Opotours. Discover the green ways of Oporto with us
-.">   
-    <meta name="keywords" content="Opotours, hiking, travelling, having fun, people, Porto, Oporto">
+    <meta name="description" content="Opotours. Discover the green ways of Oporto with us.">   
+    <meta name="keywords" content="Contact us, Opotours, hiking, travelling, having fun, people, Porto, Oporto">
     <meta name="author" content="Opotours">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:image" content="google_preview_.jpg" />
-    <title>Opotours</title>  
+    <meta property="og:image" content="preview-google/google_preview_.jpg" /> <!-- preview for social -->      
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="style_contact.css" />
-    <link rel="shortcut icon" type="image/png" href="img/fav.png"> <!-- FAVICON -->  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">    <link rel="stylesheet" type="text/css" media="screen" href="css/style_contact.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"> <!-- FAVICON -->  
+    <!-- Html tag Google -->  
+    <meta name="google-site-verification" content="rULSRbSkmJazCSVGEF6Y4Xv75X-HJ8UDGEChjGCFUjc" />
 </head>
+    
 <body>  
 
 <!-- GLOBAL CONTAINER STARTS HERE 
 ================================================== -->
     
-<div class="grid-container">
+<section class="grid-container">
 
     
 <!-- HEADER 
 ================================================== -->
     
-<div class="nav">     
+<section class="nav">     
     <header class="header">
-      <a href="https://opotours.com/" class="logo"><img src="img/logo.png" style="width:130px;"></a>     
+        
+    <a id="btn" href="https://opotours.com/">         
+        <section class="button">           
+            <img src="svg/opotours.svg" alt="Home Opotours">
+            <img src="svg/opotours-hover.svg" alt="Home Opotours and Go" class="img-top" alt="Button on over">
+        </section>           
+    </a> 
+        
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
         <li><a href="/about">About us</a></li>        
         <li><a href="/accomodations">Accomodation</a></li>
-        <li><a style="color:#157cb8" href="/contact/">Contact</a></li> 
+        <li><a style="color:#c0392b" href="/contact/">Contact</a></li> 
         <li><a id="booknow" href="/book">Book Now</a></li>   
         <a href="https://pt-pt.facebook.com/opotours/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>          
         <a href="https://www.youtube.com/channel/UCpIrkF2Og0XVnWrcgQIVtWA/videos" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>         
         <a href="/contact" target="_self"><i class="fas fa-envelope fa-2x"></i></a>
       </ul>     
     </header>    
-</div> 
+</section> 
     
 <!-- BANNER 
 ================================================== --> 
     
-<div class="banner">
+<section class="banner">
     
         <h2>Contact us</h2>
         
-</div>
+</section>
  
 <!-- CONTACT FORM
-================================================== -->  
-     
+================================================== -->       
 
-    <div class="container">
+    <section class="container">
         
-    <div class="social-buttons" style="display:inline-block">       
+    <section class="social-buttons" style="display:inline-block">       
         <p>Use the contact form to reach us by email. But if you wish you can contact us directly on Facebook.</p><a style="color: #157cb8;" href="https://pt-pt.facebook.com/opotours/" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a><br><br><br>
-    </div> 
+    </section> 
         
     <form action="POST" data-netlify="true">
 
@@ -74,25 +84,24 @@
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
  
-        <div class="field"> 
-            <div data-netlify-recaptcha="true"></div>
-        </div>
+        <section class="field"> 
+            <section data-netlify-recaptcha="true"></section>
+        </section>
 
         <input id="submit" type="submit" value="Submit">
 
       </form>
-    </div>  
+    </section>  
     
 <!-- FOOTER 
 ================================================== --> 
     
-<div class="footer">   
-    
-        <p>Copyrigth &copy; 2019, Opotours Created by <a href="http://narcisoornelas.tk" style="color:cornflowerblue; text-decoration: none">Narciso Ornelas</a></p> 
-</div>            
+<footer role=”contentinfo” class="footer">       
+        <p>Copyrigth &copy; 2019, Opotours Created by <a href="http://narcisoornelas.com" target="_blank" style="color:#157cb8; text-decoration: none">Narciso Ornelas</a></p> 
+</footer>           
     
 <!-- GLOBAL CONTAINER ENDS HERE 
 ================================================== -->    
-</div>    
+</section>    
 </body>                                         
 </html>
