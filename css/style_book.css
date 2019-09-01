@@ -269,8 +269,8 @@ h2 {
 .book {
       grid-area: book;
       display: grid;   
-      position: relative;
-      text-align: justify;
+      position: relative; 
+    text-align: center;
       background: var(--light); 
       box-shadow: var(--shadow);      
       margin: 1rem;    
@@ -279,10 +279,10 @@ h2 {
       grid-template-rows: auto;
       grid-template-areas:          
          "geres1 douro1"
-         "geres2 douro2"; 
-    
-      text-align: center;
+         "geres2 douro2";   
 }
+
+
 
 
 .btn {
@@ -294,10 +294,16 @@ h2 {
     margin-left: 0;    
     border-radius: 2px;  
     position: absolute;
-    bottom: 30px;    
+    bottom: 30px;   
+    margin-left: -3.5rem;
+
 }
 
-.geres2 h3, p, .douro2 h3, p {
+.geres2 h3, .douro2 h3 {
+    text-align: left;
+}
+
+.geres2 p, .douro2 p {
     text-align: justify;
 }
 
@@ -316,10 +322,10 @@ h2 {
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); /* this will create a shadow over the image banner*/
     background-size: cover;  
     background-position: center;
-    background-repeat: no-repeat;         
+    background-repeat: no-repeat;      
     align-items: center;
     justify-items: center;     
-    margin: 1.5rem 0.5rem 0 1rem;
+    margin: 1.5rem 0.7rem 0 1rem;
     height: 350px;  
 }
 
@@ -338,7 +344,7 @@ h2 {
     background-repeat: no-repeat;         
     align-items: center;
     justify-items: center;     
-    margin: 1.5rem 1rem 0 0.5rem;
+    margin: 1.5rem 1rem 0 0.7rem;
     height: 350px; 
 }
 
@@ -496,6 +502,7 @@ a.btt:hover {
     .btn {
         position: relative;
         width: 115px;
+        margin: 0;
     }
     
     .geres1 {
