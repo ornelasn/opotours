@@ -59,25 +59,25 @@ p {
     font-size: normal;
 }
 
-.button {
-        width: 145px;       
-        position: relative;
-        display: inline-block; 
-        float: left;
-        margin: 0.35rem 1rem 0 1rem;        
-    }
+/* SVG LOGO */
 
-.button .img-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
+svg {
+       float: left;
+       margin: 0.3rem 0 0 1rem;;
+}
 
-.button:hover .img-top {
-        display: inline;
-    }
+.st0 {
+    fill:#003a6c;
+    display: inline-block;
+}
+
+.st1 {
+    display:none;fill:none;
+} /* this is the empty botle */
+
+ svg:hover .st0 { /* for the hoveR to take effect in all elementes you have to target the intire SVG then the classes you want, or the hover will not happen */
+    fill: var(--hover);
+} 
 
 /* MAIN GRID CONTAINER 
 ================================================== */
