@@ -21,6 +21,10 @@
     box-sizing: border-box;
 }
 
+p {line-height:1.4;font-size:20px;}
+
+.footer p {line-height: normal;font-size: 1em;}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
