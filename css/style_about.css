@@ -325,7 +325,6 @@ h2 {
         text-align: center;
     }
 
-
 .social-buttons .fas:hover, .fab:hover {
     color: var(--hover); 
 }
@@ -412,6 +411,8 @@ h2 {
             "footer";
     }         
     
+     .adriano img {width: 70%;}
+	
     .book {
 	    margin: 0.5rem; 
         padding: 0;
