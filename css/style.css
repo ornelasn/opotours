@@ -103,8 +103,8 @@ a {
   color: #333;
 }
 
-.social-buttons-nav .fa-facebook-f, .fa-envelope {
-    padding: 0 3rem 1rem 0;	
+.social-buttons-nav .fa-facebook-f {
+    padding: 0 5rem 1rem 0;	
 }
 
 /* HEADER
@@ -124,14 +124,9 @@ a {
 	 color: var(--blue);
 }
 
-.header .fa-envelope {
-     display: inline-block;
-     float: right;   
-     padding: 0.9rem 2rem 0 0;
-     color: var(--blue);
-}
 
-.header .fa-youtube:hover, .header .fa-envelope:hover, .header .fa-facebook-f:hover  { 
+
+.header .fa-youtube:hover, .header .fa-facebook-f:hover  { 
     color: var(--hover);   
 }
 
