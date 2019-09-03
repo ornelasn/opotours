@@ -123,15 +123,8 @@ a {
 .header .fa-facebook-f {
     display: inline-block;
     float: right;   
-    padding: 0.9rem 3rem 0 0;
+    padding: 0.9rem 5rem 0 0;
      color: var(--blue);
-}
-
-.header .fa-envelope {
-     display: inline-block;
-     float: right;   
-     padding: 0.9rem 2rem 0 0;
-	color: var(--blue);
 }
 
 .header .fa-youtube {
@@ -141,7 +134,7 @@ a {
 	color: var(--blue);
 }
 
-.header .fa-youtube:hover, .header .fa-envelope:hover, .header .fa-facebook-f:hover  { 
+.header .fa-youtube:hover, .header .fa-facebook-f:hover  { 
     color: var(--hover);   
 }
 
