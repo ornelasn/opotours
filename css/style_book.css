@@ -110,18 +110,6 @@ a {
 	color: var(--blue);
 }
 
-body {    
-    margin: 0;
-    background: var(--primary);
-    color: var(--dark);     
-}
-.header .fa-envelope {
-     display: inline-block;
-     float: right;   
-     padding: 0.9rem 2rem 0 0;
-	color: var(--blue);
-}
-
 .header .fa-youtube {
      display: inline-block;
      float: right;   
@@ -129,7 +117,7 @@ body {
 	color: var(--blue);
 }
 
-.header .fa-youtube:hover, .header .fa-envelope:hover, .header .fa-facebook-f:hover  { 
+.header .fa-youtube:hover, .header .fa-facebook-f:hover  { 
     color: var(--hover);   
 }
 
