@@ -125,19 +125,7 @@ a {
 .header .fa-facebook-f {
     display: inline-block;
     float: right;   
-    padding: 0.9rem 3rem 0 0;
-	color: var(--blue);
-}
-
-body {    
-    margin: 0;
-    background: var(--primary);
-    color: var(--dark);     
-}
-.header .fa-envelope {
-     display: inline-block;
-     float: right;   
-     padding: 0.9rem 2rem 0 0;
+    padding: 0.9rem 5rem 0 0;
 	color: var(--blue);
 }
 
@@ -148,7 +136,7 @@ body {
 	 color: var(--blue);
 }
 
-.header .fa-youtube:hover, .header .fa-envelope:hover, .header .fa-facebook-f:hover  { 
+.header .fa-youtube:hover, .header .fa-facebook-f:hover  { 
     color: var(--hover);   
 }
 
