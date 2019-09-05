@@ -11,11 +11,11 @@
     --menu-speed: 0.75s;
 }
 
-/* GENERAL STYLING 
-================================================== */
+/* GLOBAL STYLING 
+==================================================*/
 
 * {
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
 *:before, *:after {
@@ -25,6 +25,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    font-weight: normal; 
     background: var(--primary);
     color: var(--dark); 
     position: relative;
@@ -32,44 +33,36 @@ body {
     min-height: 100vh;  /* this makes the content fill the entire space */    
 }
 
-img {
-    width: 100%; /* the image will always fill the box */  
-}
-
-h1 {    
-    text-align: center;
-}
-
-h2 {
-    text-align: left;
-    margin-left: 1rem;
-    font-weight: 500;
-}
-
-p {
-    text-align: justify;
-    margin: 1rem;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-}
-
 .btn {
     background-color: var(--blue);
     color: var(--light);
     padding: 0.3rem 1.3rem; /* 1rem=16px */ 
     text-decoration: none;
-    border: 0;       
+    border: 0;
     border-radius: 2px;      
-    bottom: 30px;  
-    left: 43%;
-    right:43%;  
 }
 
 .btn:hover {
     background-color: var(--hover);    
+}
+
+img {
+    width: 100%; /* the image will always fill the box */  
+}
+
+h2 {
+    font-weight: 500;   
+    text-align: center;
+}
+
+p {
+    font-size: normal;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.book h2 {
+    text-align: left;
 }
 
 /* SVG LOGO */
@@ -97,28 +90,24 @@ svg {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns:auto;
   grid-template-rows: auto;
   grid-template-areas: 
       "nav nav nav nav" 
-      "banner banner banner banner" 
-      "book book book book"
+      "banner banner banner banner"  
+      "book book book book"    
       "footer footer footer footer";
-}
+  }
 
 /* HEADER - MENU STYLES 
 ================================================== */
 
 .nav {
-    grid-area: nav;   
+    grid-area: nav;    
 }
 
 a {
   color: #333;
-}
-
-.social-buttons-nav .far {
-    padding: 0 3rem 1rem 0;    
 }
 
 /* HEADER
@@ -127,14 +116,7 @@ a {
 .header .fa-facebook-f {
     display: inline-block;
     float: right;   
-    padding: 0.9rem 3rem 0 0;
-	color: var(--blue);
-}
-
-.header .fa-envelope {
-     display: inline-block;
-     float: right;   
-     padding: 0.9rem 2rem 0 0;
+    padding: 0.9rem 5rem 0 0;
 	color: var(--blue);
 }
 
@@ -142,10 +124,10 @@ a {
      display: inline-block;
      float: right;   
      padding: 0.9rem 2rem 0 0;
-	color: var(--blue);
+	 color: var(--blue);
 }
 
-.header .fa-youtube:hover, .header .fa-envelope:hover, .header .fa-facebook-f:hover  { 
+.header .fa-youtube:hover, .header .fa-facebook-f:hover  { 
     color: var(--hover);   
 }
 
@@ -153,7 +135,7 @@ a {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 3; 
 }
 
@@ -168,6 +150,7 @@ a {
 .header li a {
   display: block;
   padding: 20px 20px;
+  /* border-right: 1px solid #f4f4f4; */
   text-decoration: none;
 }
 
@@ -175,6 +158,16 @@ a {
 .header .menu-btn:hover {
     background-color: var(--hover);
     color: #fff;
+}
+
+/* LOGO 
+==================================================*/
+
+.header .logo { 
+  display: block;
+  float: left;  
+  padding: 0.3rem 0 0 1rem; 
+  margin-left: 0;       
 }
 
 /* MENU 
@@ -190,7 +183,7 @@ a {
 
 #booknow {
     background-color: var(--blue);
-    color: #333;
+    color: #fff;
 }
 
 #booknow:hover {
@@ -198,7 +191,7 @@ a {
     color: #fff;
 } 
 
-/* MENU ICON
+/* MENO ICON
 ================================================== */
 
 .header .menu-icon {
@@ -246,7 +239,7 @@ a {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 230px;
+  max-height: 230px; /* THIS CHANGES THE HEIGHT OF THE MENU */
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -284,6 +277,7 @@ a {
     text-align: center;
 }
 
+
 /* BOOK
 ================================================== */
 
@@ -300,8 +294,12 @@ a {
     box-shadow: var(--shadow);     
 }
 
+.texto-geres, .texto-douro {
+    padding: 0.5rem;
+}
+
 /* GERES
-//////////////////////////////////////////// */
+==================================================  */
 
 .banner-geres {
     grid-area: banner-geres;
@@ -313,12 +311,12 @@ a {
     background-repeat: no-repeat;         
     align-items: center;
     justify-items: center;     
-    margin: 1rem 0.5rem 2rem 1rem;
+    margin: 0.5rem 0.5rem 2rem 0.5rem;
     height: 350px;  
 }
 
 /* DOURO
-//////////////////////////////////////////// */
+==================================================  */
 
 .banner-douro {
     grid-area: banner-douro;
@@ -330,7 +328,7 @@ a {
     background-repeat: no-repeat;         
     align-items: center;
     justify-items: center;     
-    margin: 1rem 1rem 2rem 1rem;
+    margin: 0.5rem 0.5rem 2rem 0.5rem;
     height: 350px;  
 }
 
@@ -380,48 +378,8 @@ a {
     padding-right: 3rem;
 }
 
-/* BACK TO TOP BUTTON 
-================================================== */
-
-.btt {
-  color: #333;
-  font-weight: bold;
-  text-align: center;
-  display: block;
-    padding-top: 0.4rem;
-}
-
-a.btt {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  width: 50px;
-  height: 50px;
-  right: 30px;
-  bottom: 60px;
-  background: #ebebeb;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  box-shadow: 3px 3px 10px rgba(23, 25, 25, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-a.btt .svg-inline--fa {
-  color: #191717;
-  position: relative;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-} 
-
-a.btt:hover {
-  transform: translatey(-10%);
-}
-
 /* MEDIA QUERIES 
-================================================== */
+ ==================================================*/
 
 @media (min-width: 1025px) {
       
@@ -430,7 +388,12 @@ a.btt:hover {
        text-align: center;
        margin-left: -4px;       
       }
-    
+         
+    .logo {
+        float: left;
+        width: 8rem; /* this will make the menu center. change it when needed */
+        padding: 0;
+    }
       .header li a {
         padding: 20px 30px;
       }
@@ -441,52 +404,49 @@ a.btt:hover {
     
       .header .menu-icon {
         display: none;
-      }   
+      }
+   
 }
 
 @media (max-width: 1024px){  
-    .grid-container {           
+    .grid-container {         
+        grid-template-columns: 1fr;
         grid-template-areas:
             "nav nav"
-            "banner banner"
-            "book book"
-            "footer footer";
-    }          
-      
-    .book {    
-      grid-template-columns: auto;
-      padding: 0.5rem;
-      grid-template-areas:           
-              "geres1"
-              "geres2"
-              "douro1" 
-              "douro2"; 
-    }    
- 
+            "banner banner"              
+            "footer";
+    }       
+        
+    h1 {
+    font-size: 2em;
+    text-align: center;
+    }
+    
+    .banner .btn {
+    font-size: 1rem;
+    } 
+    
     .footer p {
         text-align: center;
-    }   
-      
+    }
+
 } 
 
 @media (max-width: 500px){
-      .grid-container {  	
+        .grid-container {  
+           
+        grid-template-columns: 1fr;
         grid-template-areas:
             "nav"
-            "banner"
-            "book"          
+            "banner"                     
             "footer";
-    }    
-          
-    .book { 
-   	margin: 0.5rem;
-	}
-	    
-    .banner-geres, .banner-douro {
-        height: 250px;
-        margin: 1rem 1rem 2.5rem 1rem;
-    }
+    }   
     
+    .banner h1 {
+        font-size: 1.5em;        
+        text-align: center;
+   }
+
     .footer {
         display: flex;        
         align-items: center;
