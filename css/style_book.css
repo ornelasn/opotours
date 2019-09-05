@@ -24,13 +24,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: normal;
     margin: 0;
     background: var(--primary);
-    color: var(--dark);   
+    color: var(--dark); 
     position: relative;
     padding-bottom: 3rem;  /* 3rem is the size o the footer */
-    min-height: 100vh;  /* this makes the content fill the entire space */  
+    min-height: 100vh;  /* this makes the content fill the entire space */    
 }
 
 img {
@@ -363,15 +362,16 @@ a {
 }
 
 /* FOOTER 
-================================================== */
+ ==================================================*/
 
 .footer {
     grid-area: footer;
     background: var(--dark);    
-    height: 3rem;      
+    height: 3rem;    
     position: absolute; /* position is absolute and relative to the body */ 
-    bottom: 0;    
+    bottom: 0;
     width: 100%; 
+    z-index: 99;
 } 
 
 .footer p {
