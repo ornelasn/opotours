@@ -22,10 +22,6 @@
     box-sizing: border-box;
 }
 
-p {line-height:1.4;font-size:20px;}
-
-.footer p {line-height: normal;font-size: 1em;}
-
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -41,43 +37,69 @@ img {
     width: 100%; /* the image will always fill the box */  
 }
 
-h2 {
-    font-weight: 500;
+.logo {
+        width: 145px;       
+        position: relative;
+        display: inline-block; 
+        float: left;
+        margin: 0.35rem 1rem 0 1rem;     
+    }
+
+.logo .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+.logo:hover .img-top {
+        display: inline;
+}
+
+h1 {    
     text-align: center;
 }
 
-.book {
-    border-radius: 6px;	
-    padding: 0px 7px; /* this fixes que border not being applied */
+h2 {
+    text-align: left;
+    margin-left: 1rem;
+    font-weight: 500;
 }
 
-/* SVG LOGO */
-
-svg {
-       float: left;
-       margin: 0.3rem 0 0 1rem;;
+p {
+    text-align: justify;
+    margin: 1rem;
+    line-height: 1.6;
 }
 
-.st0 {
-    fill:#003a6c;
-    display: inline-block;
+a {
+    text-decoration: none;
 }
 
-.st1 {
-    display:none;fill:none;
-} /* this is the empty botle */
+.btn {
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 0.3rem 1.3rem; /* 1rem=16px */ 
+    text-decoration: none;
+    border: 0;       
+    border-radius: 2px;      
+    bottom: 30px;  
+    left: 43%;
+    right:43%;  
+}
 
- svg:hover .st0 { /* for the hoveR to take effect in all elementes you have to target the intire SVG then the classes you want, or the hover will not happen */
-    fill: var(--hover);
-} 
+.btn:hover {
+    background-color: var(--hover);    
+}
 
 /* MAIN GRID CONTAINER 
 ================================================== */
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: 
       "nav nav nav nav" 
       "banner banner banner banner" 
@@ -96,13 +118,24 @@ a {
   color: #333;
 }
 
+.social-buttons-nav .far {
+    padding: 0 3rem 1rem 0;    
+}
+
 /* HEADER
 ================================================== */
 
 .header .fa-facebook-f {
     display: inline-block;
     float: right;   
-    padding: 0.9rem 5rem 0 0;
+    padding: 0.9rem 3rem 0 0;
+	color: var(--blue);
+}
+
+.header .fa-envelope {
+     display: inline-block;
+     float: right;   
+     padding: 0.9rem 2rem 0 0;
 	color: var(--blue);
 }
 
@@ -113,7 +146,7 @@ a {
 	color: var(--blue);
 }
 
-.header .fa-youtube:hover, .header .fa-facebook-f:hover  { 
+.header .fa-youtube:hover, .header .fa-envelope:hover, .header .fa-facebook-f:hover  { 
     color: var(--hover);   
 }
 
@@ -237,94 +270,60 @@ a {
 /* BANNER 
 ================================================== */
 
-
 .banner { 
     grid-area: banner; 
     display: grid;
+    text-align: center;
+    color: #fff;
     margin-top: 3.6rem; /* this moves the banner below the nav */ 
     background-color: #5c0a0a;   
     margin-left: 0;
     margin-right: 0;   
 }
 
-h2 {
-    color: #fff;
+.banner h2 {
+    text-align: center;
 }
 
 /* BOOK
 ================================================== */
 
 .book {
-      grid-area: book;
-      display: grid;   
-      position: relative; 
-    text-align: center;
-      background: var(--light); 
-      box-shadow: var(--shadow);      
-      margin: 1rem;    
-      border-radius: 6px;	
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      grid-template-areas:          
-         "geres1 douro1"
-         "geres2 douro2";   
-}
-
-
-
-
-.btn {
-    background-color: var(--blue);
-    color: var(--light);
-    padding: 0.3rem 1.3rem; /* 1rem=16px */ 
-    text-decoration: none;
-    border: 0;
-    margin-left: 0;    
-    border-radius: 2px;  
-    position: absolute;
-    bottom: 30px;   
-    margin-left: -3.5rem;
-
-}
-
-.geres2 h3, .douro2 h3 {
-    text-align: left;
-}
-
-.geres2 p, .douro2 p {
-    text-align: justify;
-}
-
-.btn:hover {
-    background-color: var(--hover);    
-}
-
-.geres2, .douro2 {
-    line-height: 1.5;
-}
-
-.geres1 { 
-    grid-area: geres1;     
+    grid-area: book;
     display: grid;
+    text-align: center;
+    background-color: aliceblue;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* if we have to many boxes we tell the browser to display automaticly depending on the size of the screen */ 
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: var(--shadow);     
+}
+
+/* GERES
+//////////////////////////////////////////// */
+
+.banner-geres {
+    grid-area: banner-geres;
+    display: grid;   
     background: url(/img/geres1.jpg);
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); /* this will create a shadow over the image banner*/
     background-size: cover;  
     background-position: center;
-    background-repeat: no-repeat;      
+    background-repeat: no-repeat;         
     align-items: center;
     justify-items: center;     
-    margin: 1.5rem 0.7rem 0 1rem;
+    margin: 1rem 0.5rem 2rem 1rem;
     height: 350px;  
 }
 
-.geres2 {
-    grid-area: geres2;
-    padding: 0 1rem;
-}
+/* DOURO
+//////////////////////////////////////////// */
 
-.douro1 {
-    grid-area: douro1; 
-    display: grid;
+.banner-douro {
+    grid-area: banner-douro;
+    display: grid;    
     background: url(/img/douro1.jpg);
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); /* this will create a shadow over the image banner*/
     background-size: cover;  
@@ -332,18 +331,8 @@ h2 {
     background-repeat: no-repeat;         
     align-items: center;
     justify-items: center;     
-    margin: 1.5rem 1rem 0 0.7rem;
-    height: 350px; 
-}
-
-.douro2 {
-    grid-area: douro2; 
-    padding: 0 1rem;
-}
-
-h3 {
-    font-weight: 500;
-    font-size: 1.5em;
+    margin: 1rem 1rem 2rem 1rem;
+    height: 350px;  
 }
 
 /* ROUND BUTTON */
@@ -373,8 +362,6 @@ h3 {
 	text-shadow: 0px 0px 10px rgba(255,255,100,1);
 }
 
-
-
 /* FOOTER 
 ================================================== */
 
@@ -383,7 +370,7 @@ h3 {
     background: var(--dark);    
     height: 3rem;      
     position: absolute; /* position is absolute and relative to the body */ 
-    bottom: 0;
+    bottom: 0;    
     width: 100%; 
 } 
 
@@ -443,12 +430,7 @@ a.btt:hover {
        text-align: center;
        margin-left: -4px;       
       }
-         
-    .logo {
-        float: left;
-        width: 8rem; /* this will make the menu center. change it when needed */
-        padding: 0;
-    }
+    
       .header li a {
         padding: 20px 30px;
       }
@@ -459,8 +441,7 @@ a.btt:hover {
     
       .header .menu-icon {
         display: none;
-      }
-   
+      }   
 }
 
 @media (max-width: 1024px){  
@@ -480,36 +461,12 @@ a.btt:hover {
               "geres2"
               "douro1" 
               "douro2"; 
-    }
-    
+    }    
  
     .footer p {
         text-align: center;
-    }
-
-    .btn {
-        position: relative;
-        width: 115px;
-        margin: 0;
-    }
-    
-    .geres1 {
-        margin-left: 0.5rem;
-        margin-top: 0.5rem; 
-        height: 250px;        
-    }
-    
-    .geres2 {
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    
-    .douro1 {
-        margin-top: 0;
-        margin-right: 0.5rem;
-        height: 250px; 
-    }
-    
+    }   
+      
 } 
 
 @media (max-width: 500px){
@@ -520,23 +477,16 @@ a.btt:hover {
             "book"          
             "footer";
     }    
-       
-    .prevent {
-        display: none;
-    }
-	
-     .book { 
+          
+    .book { 
    	margin: 0.5rem;
 	}
-	
-    .geres1, .geres2, .douro1, .douro2 {
-        padding: 0.5rem;
+	    
+    .banner-geres, .banner-douro {
+        height: 250px;
+        margin: 1rem 1rem 2.5rem 1rem;
     }
     
-    .banner h2 {              
-        text-align: center;
-   }         
-  
     .footer {
         display: flex;        
         align-items: center;
