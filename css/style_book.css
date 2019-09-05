@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 
-p {line-height:1.6;font-size:18px;}
+p {line-height:1.6;font-size:18px;text-align: justify;}
 
 .footer p {line-height: normal;font-size: 1em;}
 
