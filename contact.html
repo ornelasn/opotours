@@ -270,30 +270,26 @@
 <!-- CONTACT FORM
 ================================================== -->       
 
-    <section class="container">
-        
-    <section class="social-buttons" style="display:inline-block">       
-        <p>Use the contact form to reach us by email. But if you wish you can contact us directly on Facebook.</p><br><a style="color: #157cb8;" href="https://pt-pt.facebook.com/opotours/" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a><br><br><br>
-    </section>      
-	
-<form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-	<p>	
-	<label><input type="text" name="name" placeholder="Your name"/></label>
-	<p>	
-	<label><input type="text" name="name" placeholder="Your email"/></label>
-	</p>
-	<p>
-	<label><textarea name="message" placeholder="Write something"></textarea></label>
-	</p>
-	<div data-netlify-recaptcha="true"></div>
-	</p>
-	<input id="submit" type="submit" value="Submit">
-	</p>	
-</form>
-	<br>
+<section class="container">     
+
+    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <p>	
+    <label><input type="text" name="name" placeholder="Your name"/></label>
+    <p>	
+    <label><input type="email" name="email" placeholder="Your email"/></label>
+    </p>
+    <p>
+    <label><textarea name="message" placeholder="Write something"></textarea></label>
+    </p>
+    <div data-netlify-recaptcha="true"></div>
+    <br>
+    <input id="submit" type="submit" value="Submit">	
+    </form>
+    <br>
+    
 </section>  
     
-  <br><br><br><br>
+<br><br><br><br>
     
 <!-- FOOTER 
 ================================================== --> 
