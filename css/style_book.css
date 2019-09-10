@@ -22,10 +22,6 @@
     box-sizing: border-box;
 }
 
-p {line-height:1.6;font-size:18px;text-align: justify;}
-
-.footer p {line-height: normal;font-size: 1em;}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -82,6 +78,10 @@ svg {
  svg:hover .st0 { /* for the hoveR to take effect in all elementes you have to target the intire SVG then the classes you want, or the hover will not happen */
     fill: var(--hover);
 } 
+
+p {line-height:1.6;font-size:18px;text-align: justify;}
+
+.footer p {line-height: normal;font-size: 13px; margin-top: 1rem;}
 
 /* MAIN GRID CONTAINER 
 ================================================== */
@@ -273,6 +273,7 @@ a {
 
 .banner h2 {
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 
@@ -282,18 +283,18 @@ a {
 .book {
     grid-area: book;
     display: grid;
+    margin: -1rem 1rem 0 1rem;
     text-align: center;
-    background-color: aliceblue;
+    background-color: #fff;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* if we have to many boxes we tell the browser to display automaticly depending on the size of the screen */ 
-    margin: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* if we have to many boxes we tell the browser to display automaticly depending on the size of the screen */    
     padding: 1rem;
     border-radius: 5px;
     box-shadow: var(--shadow);     
 }
 
 .texto-geres, .texto-douro {
-    padding: 0.5rem;
+    padding: 0.5rem;    
 }
 
 /* GERES
@@ -301,7 +302,7 @@ a {
 
 .banner-geres {
     grid-area: banner-geres;
-    display: grid;   
+    display: grid;  
     background: url(/img/geres1.jpg);
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); /* this will create a shadow over the image banner*/
     background-size: cover;  
@@ -373,7 +374,7 @@ a {
 .footer p {
     color: var(--light);
     text-align: right; 
-    padding-right: 3rem;
+    padding-right: 4rem;
 }
 
 /* MEDIA QUERIES 
@@ -417,20 +418,21 @@ a {
     }       
         
     h1 {
-    font-size: 2em;
-    text-align: center;
+        font-size: 2em;
+        text-align: center;
     }
     
     .banner .btn {
-    font-size: 1rem;
+       font-size: 1rem;
     } 
     
     .footer {
-        padding-bottom: 3.5rem;
+        padding-bottom: 3.5rem;        
     }
     
     .footer p {
         text-align: center;
+         padding-right:0;
     }
 
 } 
@@ -453,7 +455,7 @@ a {
     
     .book {
          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-         margin: 0.5rem;
+         margin: -1rem 0.5rem 0.5rem 0.5rem;  
     }
     
     .banner-geres, .banner-douro {
@@ -463,14 +465,14 @@ a {
     .footer {
         display: flex;        
         align-items: center;
+        align-content: center;
         padding: 2em;   
-        margin-top: 1rem;
+      
     }    
     
-    .footer p {
-        color: var(--light);    
-        align-items: center;
-        padding: 1rem;
+    .footer p { 
+        text-align: center;
+        padding: 0 1rem;
     }
      
 } 

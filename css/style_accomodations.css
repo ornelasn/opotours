@@ -22,10 +22,6 @@
     box-sizing: border-box;
 }
 
-p {line-height:1.4;font-size:18px;}
-
-.footer p {line-height: normal;font-size: 1em;}
-
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -89,6 +85,10 @@ svg {
  svg:hover .st0 { /* for the hoveR to take effect in all elementes you have to target the intire SVG then the classes you want, or the hover will not happen */
     fill: var(--hover);
 } 
+
+p {line-height:1.4;font-size:18px;}
+
+.footer p {line-height: normal;font-size: 13px; margin-top: 1rem;}
 
 /* MAIN GRID CONTAINER 
 ================================================== */
@@ -264,6 +264,7 @@ a {
 
 h2 {
     color: #fff;
+    padding-bottom: 1rem;
 }
 
 /* THIS IS ACCOMODATION BUT LASY TO CHANGE NAMES :D
@@ -274,7 +275,7 @@ h2 {
       display: grid;      
       background: var(--light); 
       box-shadow: var(--shadow);
-      margin: 1rem;      
+      margin: -1rem 1rem 0 1rem;      
       grid-template-columns: 1fr 1.3fr;
       grid-template-rows: auto;
       grid-template-areas:          
@@ -331,7 +332,7 @@ h2 {
 .footer p {
     color: var(--light);
     text-align: right; 
-    padding-right: 3rem;
+    padding-right: 4rem;
 }
 
 /* MEDIA QUERIES 
@@ -402,8 +403,8 @@ h2 {
             "footer";
     }    
        
-     .book {
-	   margin: 0.5rem;  
+    .book {
+	   margin: -1rem 0.5rem 0.5rem 0.5rem;  
 	}
 	
     .geres1, .geres2, .douro1, .douro2 {
@@ -412,18 +413,11 @@ h2 {
     
     .banner h2 {              
         text-align: center;
-   }         
-  
-    .footer {
-        display: flex;        
-        align-items: center;
-        padding: 2em;        
-    }    
-    
-    .footer p {
-        color: var(--light);    
-        align-items: center;
-        padding: 1rem;
+    }     
+         
+    .footer p {       
+        text-align: center;
+        padding: 0;
     }
 } 
 

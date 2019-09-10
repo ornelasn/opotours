@@ -79,6 +79,8 @@ svg {
     fill: var(--hover);
 } 
 
+.footer p {line-height: normal;font-size: 13px; margin-top: 1rem;}
+
 /* MAIN GRID CONTAINER 
 ================================================== */
 
@@ -332,7 +334,7 @@ a {
 .footer p {
     color: var(--light);
     text-align: right; 
-    padding-right: 3rem;
+    padding-right: 4rem;
 }
 
 /* MEDIA QUERIES 
@@ -383,8 +385,9 @@ a {
     font-size: 1rem;
     } 
     
-    .footer p {
+   .footer p {       
         text-align: center;
+        padding: 0;
     }
 
 } 

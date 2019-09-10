@@ -21,10 +21,6 @@
     box-sizing: border-box;
 }
 
-p {line-height:1.4;font-size:18px;}
-
-.footer p {line-height: normal;font-size: 1em;}
-
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -87,6 +83,10 @@ svg {
  svg:hover .st0 { /* for the hoveR to take effect in all elementes you have to target the intire SVG then the classes you want, or the hover will not happen */
     fill: var(--hover);
 } 
+
+p {line-height:1.4;font-size:18px;}
+
+.footer p {line-height: normal;font-size: 13px; margin-top: 1rem;}
 
 /* MAIN GRID CONTAINER 
 ================================================== */
@@ -262,6 +262,7 @@ a {
 
 h2 {
     color: #fff;
+    padding-bottom: 1rem;
 }
 
 /* ABOUT
@@ -274,7 +275,7 @@ h2 {
       align-items: center;
       background: var(--light); 
       box-shadow: var(--shadow);
-      margin: 1rem;
+      margin: -1rem 1rem 0 1rem;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
       grid-template-areas:          
@@ -333,7 +334,7 @@ h2 {
 .footer p {
     color: var(--light);
     text-align: right; 
-    padding-right: 3rem;
+    padding-right: 4rem;
 }
 
 /* MEDIA QUERIES 
@@ -382,8 +383,9 @@ h2 {
             "about about";
     }
     
-    .footer p {
+    .footer p {       
         text-align: center;
+        padding: 0;
     }
     
     h3 {
@@ -400,10 +402,14 @@ h2 {
             "footer";
     }         
     
-     .adriano img {width: 70%;}
+    .adriano img {width: 85%;}
+    
+    .adriano, .about {
+        border-radius: 5px;
+    }
 	
     .book {
-	    margin: 0.5rem; 
+	    margin: -1rem 0.5rem 0.5rem 0.5rem; 
         padding: 0;
 	}
     
