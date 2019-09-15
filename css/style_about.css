@@ -376,6 +376,8 @@ h2 {
             "book book"
             "footer footer";
     }   
+
+    .adriano img {width: 85%;}
        
     .book {             
         grid-template-areas: 
@@ -406,7 +408,6 @@ h2 {
             "footer";
     }         
     
-    .adriano img {width: 85%;}
     
     .adriano, .about {
         border-radius: 5px;
