@@ -298,7 +298,7 @@ h2 {
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    width: 60%; 
+    width: 50%; 
 }
 
 .about { 
@@ -386,6 +386,10 @@ h2 {
     .footer p {       
         text-align: center;
         padding: 0;
+    }
+    
+    .adriano img {     
+        width: 80%; 
     }
     
     h3 {

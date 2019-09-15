@@ -293,10 +293,6 @@ a {
     box-shadow: var(--shadow);     
 }
 
-.texto-geres, .texto-douro {
-    padding: 0.5rem;    
-}
-
 /* GERES
 ==================================================  */
 
@@ -312,6 +308,10 @@ a {
     justify-items: center;     
     margin: 0.5rem 0.5rem 2rem 0.5rem;
     height: 350px;  
+}
+
+.title-geres, .texto-geres {
+    padding: 0.5rem;
 }
 
 /* DOURO
@@ -331,7 +331,11 @@ a {
     height: 350px;  
 }
 
-/* ROUND BUTTON */
+.title-douro, .texto-douro {
+    padding: 0.5rem;
+}
+
+/* ROUND BUTTON ================================================== */
 
 .round-button {
 	box-sizing: border-box;
