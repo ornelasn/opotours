@@ -286,7 +286,7 @@ a {
     text-align: center;
     background-color: #fff;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* if we have to many boxes we tell the browser to display automaticly depending on the size of the screen */    
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* if we have to many boxes we tell the browser to display automaticly depending on the size of the screen */    
     padding: 1rem;
     border-radius: 5px;
     box-shadow: var(--shadow);     
@@ -439,24 +439,28 @@ a {
     }
 } 
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
         .grid-container {          
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "nav"
-            "banner" 
-            'book'
-            "footer";
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                    "nav"
+                    "banner" 
+                    'book'
+                    "footer";
     }   
     
     .banner h2 {
         font-size: 1em;  
-        padding-bottom: 1rem;
+        padding: 0.5rem 1rem 2rem 1rem;
         text-align: center;
     }
     
+    .banner {
+        margin-top: 0;
+    }
+    
     .header {
-        position: block; 
+        position: relative; 
     }
     
     .btn {
@@ -464,12 +468,12 @@ a {
         position: -webkit-sticky; 
         display: block; 
         padding: 1rem 2rem;   
-        top: 0;
+        top: 0;       
         z-index: auto;
     }  
     
     .book {        
-         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
          margin: -1rem 0.5rem 0.5rem 0.5rem;  
     }
     
