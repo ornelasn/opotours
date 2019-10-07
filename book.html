@@ -12,13 +12,15 @@
     <meta name="author" content="Opotours">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:image" content="preview-google/book2-opotours-.jpg" /> <!-- preview for social --> 
+    <meta property="og:image" content="preview-google/book2-opotours.jpg" /> <!-- preview for social --> 
     <meta name="google-site-verification" content="rULSRbSkmJazCSVGEF6Y4Xv75X-HJ8UDGEChjGCFUjc" /> 
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">   <link rel="stylesheet" type="text/css" media="screen" href="css/style_book.css" />
     <link rel="shortcut icon" type="image/png" href="fav-icon.png"> <!-- FAVICON -->  
-    <link href="dist/lity.css" rel="stylesheet"> <!-- lightbox for video -->  
+	<link href="dist/lity.css" rel="stylesheet"> <!-- lightbox for video --> 
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
 </head>
     
@@ -273,7 +275,6 @@
 
 <!-- GERES 
 ================================================== -->   
-<article>    
     
 <div class="geres">
     
@@ -287,15 +288,15 @@
 
     <div class="texto-geres">
         
-        <a class="btn" href="https://www.airbnb.com/experiences/178565?s=67&shared_item_type=2&virality_entry_point=2" target="_blank">Book Now on Airbnb</a><br><br>
+		<button type="button" class="collapsible">About the experience<i class="fas fa-caret-down"></i></button>
        
-        <p>Natural pools in Gerês National Park is a formation of small pools in the river surrounded by the amazing landscape of the National Park. In the summer with the low level of water in the river it makes amazing pools where you can have a great swim and sectione in these extremely transparent waters. A true must do, especially in warm summers.</p><p><strong style="font-weight: 500">Spoken languages:</strong> English, Portuguese, Spanish and French (Please confirm spoken languages for each scheduled tour)</p>               
-        
+		<div class="content"><p>Natural pools in Gerês National Park is a formation of small pools in the river surrounded by the amazing landscape of the National Park. In the summer with the low level of water in the river it makes amazing pools where you can have a great swim and sectione in these extremely transparent waters. A true must do, especially in warm summers.<br><br><strong style="font-weight: 500">Spoken languages:</strong> English, Portuguese, Spanish and French (Please confirm spoken languages for each scheduled tour)</p></div><br><br>
+		
+		<a class="btn" href="https://www.airbnb.com/experiences/178565?s=67&shared_item_type=2&virality_entry_point=2" target="_blank">Book Now on Airbnb</a>
+
     </div>   
 </div>
     
-</article>    
-
 <!-- DOURO  
 ================================================== -->
     
@@ -309,20 +310,45 @@
         
     </div>  
 
-        <div class="texto-douro">
-            
-        <a class="btn" href="https://www.airbnb.com/experiences/235241?source=embed_widget" target="_blank">Book Now on Airbnb</a><br><br>
+        <div class="texto-douro">   
+		
+		<button type="button" class="collapsible">About the experience<i class="fas fa-caret-down"></i></button>
 
-        <p>Douro Valley is a region has been designated by UNESCO as a World Heritage Site. Traditionally, the wine was taken downriver in flat-bottom boats called “rabelos”, to be stored in barrels in cellars in Vila Nova de Gaia, Porto. In this experience we will show you the Port wine route, since the place where the grapes grow and are smashed (Douro Valley) to the place where is stowed to get old and later on consumed or exported to the world (Porto city) in a very relax and informal way which will make you feel a local.</p><p><strong style="font-weight: 500">Spoken languages:</strong> English, Portuguese, Spanish and French (Please confirm spoken languages for each scheduled tour)</p> 
+		<div class="content"><p>Douro Valley is a region has been designated by UNESCO as a World Heritage Site. Traditionally, the wine was taken downriver in flat-bottom boats called “rabelos”, to be stored in barrels in cellars in Vila Nova de Gaia, Porto. In this experience we will show you the Port wine route, since the place where the grapes grow and are smashed (Douro Valley) to the place where is stowed to get old and later on consumed or exported to the world (Porto city) in a very relax and informal way which will make you feel a local.<br><br><strong style="font-weight: 500">Spoken languages:</strong> English, Portuguese, Spanish and French (Please confirm spoken languages for each scheduled tour)</p></div><br><br>
+		
+		<a class="btn" href="https://www.airbnb.com/experiences/235241?source=embed_widget" target="_blank">Book Now on Airbnb</a><br><br>
                         
     </div>    
 </div>  
+
+
+<!-- COLAPSIBLE CONTENT 
+================================================== -->  
+
+<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+		
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.display === "block") {
+				content.style.display = "none";
+			} else {
+				content.style.display = "block";
+			}
+		  });
+		}
+</script>
     
 <!-- BOOK END
 ================================================== -->    
     
 </section>  
 <br> 
+
+
     
 <!-- FOOTER 
 ================================================== -->  

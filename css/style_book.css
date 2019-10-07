@@ -39,7 +39,7 @@ body {
     padding: 0.5rem 1.3rem; 
     text-decoration: none;
     border: 0;
-    border-radius: 2px;      
+    border-radius: 2px;        
 }
 
 .btn:hover {
@@ -78,10 +78,6 @@ svg {
  svg:hover .st0 { /* for the hoveR to take effect in all elementes you have to target the intire SVG then the classes you want, or the hover will not happen */
     fill: var(--hover);
 } 
-
-p {line-height:1.6;font-size:18px;text-align: justify;}
-
-.footer p {line-height: normal;font-size: 13px; margin-top: 1rem;}
 
 /* MAIN GRID CONTAINER 
 ================================================== */
@@ -292,6 +288,8 @@ a {
     box-shadow: var(--shadow);     
 }
 
+p {line-height:1.6;font-size:18px;text-align: left;}
+
 /* GERES
 ==================================================  */
 
@@ -361,6 +359,35 @@ a {
 	text-shadow: 0px 0px 10px rgba(255,255,100,1);
 }
 
+/* COLLAPSIBLE
+================================================== */
+
+.collapsible {
+  background-color: #696969;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;  
+  margin-bottom: 1rem;
+}
+
+.active, .collapsible:hover {
+  background-color: #A9A9A9;
+}
+
+.content {
+  padding: 0;
+  display: none;
+  overflow: hidden;  
+}
+
+.fa-caret-down {
+  float: right;
+}
+
 /* FOOTER 
  ==================================================*/
 
@@ -378,6 +405,9 @@ a {
     color: var(--light);
     text-align: right; 
     padding-right: 4rem;
+    line-height: normal;
+    font-size: 13px; 
+    margin-top: 1rem;
 }
 
 /* MEDIA QUERIES 
